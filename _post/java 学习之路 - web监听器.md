@@ -1,23 +1,23 @@
-## Ê²Ã´ÊÇweb¼àÌıÆ÷
-	web¼àÌıÆ÷Ö÷ÒªÊÇ¶ÔServlet¶ÔÏó½øĞĞ¼àÌıºÍ¶¯×÷µÄ£¬Ëü¿ÉÒÔ¼àÌı¿Í»§¶ËµÄÇëÇó£¬·şÎñ¶ËµÄ²Ù×÷µÈ
+## ä»€ä¹ˆæ˜¯webç›‘å¬å™¨
+	webç›‘å¬å™¨ä¸»è¦æ˜¯å¯¹Servletå¯¹è±¡è¿›è¡Œç›‘å¬å’ŒåŠ¨ä½œçš„ï¼Œå®ƒå¯ä»¥ç›‘å¬å®¢æˆ·ç«¯çš„è¯·æ±‚ï¼ŒæœåŠ¡ç«¯çš„æ“ä½œç­‰
 
-## web¼àÌıÆ÷µÄ·ÖÀà
-	¸ù¾İ¼àÌıµÄÓò¶ÔÏó¿ÉÒÔ·ÖÎªÈıÀà
-		1.¼àÌıServletÉÏÏÂÎÄ¶ÔÏóµÄ¼àÌıÆ÷
-			1. ¶ÔServletÉÏÏÂÎÄ¶ÔÏó³õÊ¼»¯¼°¶ÔÏóÏú»Ù¶¯×÷½øĞĞ¼àÌıµÄ  ServletContextListener
-			2. ¶ÔServletÉÏÏÂÎÄ¶ÔÏóµÄÊôĞÔ½øĞĞ¼àÌıµÄ ServletContextAttributeListener
-		2.¼àÌıHTTP»á»° Session¶ÔÏóµÄ¼àÌıÆ÷
-			1. ¶ÔHTTP Session¶ÔÏó³õÊ¼»¯¼°Ïú»Ù¶¯×÷½øĞĞ¼àÌıµÄ  HttpSessionListener
-			2. ¶ÔHTTP Session¶ÔÏóµÄÊôĞÔ½øĞĞ¼àÌıµÄ  HttpSessionAttributeListener
-			3. ¶ÔHTTP Session¶ÔÏóÉèÖÃµÄÊôĞÔ¶ÔÏó½øĞĞ¼àÌıµÄ HttpSessionBindingListener
-			4. ¶ÔHTTP Session¶ÔÏóµÄ»îÔ¾ĞÔ½øĞĞ¼àÌıµÄ HttpSessionActivationListener
-		3.¼àÌı¿Í»§¶ËÇëÇóServlet Request¶ÔÏóµÄ¼àÌıÆ÷
-			1. ¶ÔServlet Request¶ÔÏó³õÊ¼»¯¼°Ïú»Ù¶¯×÷½øĞĞ¼àÌıµÄ ServletRequestListener
-			2. ¶ÔServlet Request¶ÔÏóµÄÊôĞÔ½øĞĞ¼àÌıµÄ ServletRequestAttributeListener
-## ¸÷¼àÌıÆ÷µÄÊ¹ÓÃDemo
-	 ×¢£º±¾ÎÄÊ¹ÓÃµÄÊÇServlet3.0£¬ËùÒÔ»ùÓÚ@WebListener×¢½â½øĞĞ´úÂëÑİÊ¾£¬Èç¹ûÊÇÆäËû°æ±¾Ö»ĞèÔÚweb.xmlÎÄ¼şÖĞÅäÖÃlistener¼´¿É
-	1. ¼àÌıServletÉÏÏÂÎÄ¶ÔÏóµÄ ServletContextListener
-		Òª¶ÔServletÉÏÏÂÎÄ ¶ÔÏó½øĞĞ¼àÌıÖ»ĞèÊµÏÖServletContextListener½Ó¿Ú¼´¿É£¬´Ë½Ó¿ÚÖ»ÓĞÁ½¸ö·½·¨£¬·Ö±ğÎªServletÆô¶¯³õÊ¼»¯·½·¨contextInitialized£¨¿ÉÒÔ¶ÔServletContext×öÏàÓ¦µÄ³õÊ¼»¯²Ù×÷£©£¬ÒÔ¼°ServletÏú»Ù·½·¨contextDestroyed£¨¿ÉÒÔ¶ÔServletContextËù³ÖÓĞµÄ×ÊÔ´½øĞĞÊÍ·Å£©£»ÔÚtomcatÖĞÍ¨startÃüÁîÆô¶¯Ê±£¬¼àÌıµ½Servlet¶ÔÏóµÄ´´½¨ºócontextInitialized·½·¨»á±»Ö´ĞĞ£¬µ±Ö´ĞĞshutdownÃüÁîÊ±£¬¼àÌıµ½Servlet¶ÔÏó½«±»Ïú»Ù£¬contextDestroyed·½·¨»á±»Ö´ĞĞ¡£
+## webç›‘å¬å™¨çš„åˆ†ç±»
+	æ ¹æ®ç›‘å¬çš„åŸŸå¯¹è±¡å¯ä»¥åˆ†ä¸ºä¸‰ç±»
+		1.ç›‘å¬Servletä¸Šä¸‹æ–‡å¯¹è±¡çš„ç›‘å¬å™¨
+			1. å¯¹Servletä¸Šä¸‹æ–‡å¯¹è±¡åˆå§‹åŒ–åŠå¯¹è±¡é”€æ¯åŠ¨ä½œè¿›è¡Œç›‘å¬çš„  ServletContextListener
+			2. å¯¹Servletä¸Šä¸‹æ–‡å¯¹è±¡çš„å±æ€§è¿›è¡Œç›‘å¬çš„ ServletContextAttributeListener
+		2.ç›‘å¬HTTPä¼šè¯ Sessionå¯¹è±¡çš„ç›‘å¬å™¨
+			1. å¯¹HTTP Sessionå¯¹è±¡åˆå§‹åŒ–åŠé”€æ¯åŠ¨ä½œè¿›è¡Œç›‘å¬çš„  HttpSessionListener
+			2. å¯¹HTTP Sessionå¯¹è±¡çš„å±æ€§è¿›è¡Œç›‘å¬çš„  HttpSessionAttributeListener
+			3. å¯¹HTTP Sessionå¯¹è±¡è®¾ç½®çš„å±æ€§å¯¹è±¡è¿›è¡Œç›‘å¬çš„ HttpSessionBindingListener
+			4. å¯¹HTTP Sessionå¯¹è±¡çš„æ´»è·ƒæ€§è¿›è¡Œç›‘å¬çš„ HttpSessionActivationListener
+		3.ç›‘å¬å®¢æˆ·ç«¯è¯·æ±‚Servlet Requestå¯¹è±¡çš„ç›‘å¬å™¨
+			1. å¯¹Servlet Requestå¯¹è±¡åˆå§‹åŒ–åŠé”€æ¯åŠ¨ä½œè¿›è¡Œç›‘å¬çš„ ServletRequestListener
+			2. å¯¹Servlet Requestå¯¹è±¡çš„å±æ€§è¿›è¡Œç›‘å¬çš„ ServletRequestAttributeListener
+## å„ç›‘å¬å™¨çš„ä½¿ç”¨Demo
+	 æ³¨ï¼šæœ¬æ–‡ä½¿ç”¨çš„æ˜¯Servlet3.0ï¼Œæ‰€ä»¥åŸºäº@WebListeneræ³¨è§£è¿›è¡Œä»£ç æ¼”ç¤ºï¼Œå¦‚æœæ˜¯å…¶ä»–ç‰ˆæœ¬åªéœ€åœ¨web.xmlæ–‡ä»¶ä¸­é…ç½®listenerå³å¯
+	1. ç›‘å¬Servletä¸Šä¸‹æ–‡å¯¹è±¡çš„ ServletContextListener
+		è¦å¯¹Servletä¸Šä¸‹æ–‡ å¯¹è±¡è¿›è¡Œç›‘å¬åªéœ€å®ç°ServletContextListeneræ¥å£å³å¯ï¼Œæ­¤æ¥å£åªæœ‰ä¸¤ä¸ªæ–¹æ³•ï¼Œåˆ†åˆ«ä¸ºServletå¯åŠ¨åˆå§‹åŒ–æ–¹æ³•contextInitializedï¼ˆå¯ä»¥å¯¹ServletContextåšç›¸åº”çš„åˆå§‹åŒ–æ“ä½œï¼‰ï¼Œä»¥åŠServleté”€æ¯æ–¹æ³•contextDestroyedï¼ˆå¯ä»¥å¯¹ServletContextæ‰€æŒæœ‰çš„èµ„æºè¿›è¡Œé‡Šæ”¾ï¼‰ï¼›åœ¨tomcatä¸­é€šstartå‘½ä»¤å¯åŠ¨æ—¶ï¼Œç›‘å¬åˆ°Servletå¯¹è±¡çš„åˆ›å»ºåcontextInitializedæ–¹æ³•ä¼šè¢«æ‰§è¡Œï¼Œå½“æ‰§è¡Œshutdownå‘½ä»¤æ—¶ï¼Œç›‘å¬åˆ°Servletå¯¹è±¡å°†è¢«é”€æ¯ï¼ŒcontextDestroyedæ–¹æ³•ä¼šè¢«æ‰§è¡Œã€‚
 ```
 @WebListener
 public class MyServletContextListener implements ServletContextListener {
@@ -37,8 +37,8 @@ public class MyServletContextListener implements ServletContextListener {
 
 ![](https://s1.51cto.com/images/blog/201712/25/3ccb90fee93ad13783443d1af1d9abcc.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 
-	2.¼àÌıServletÉÏÏÂÎÄ¶ÔÏóÊôĞÔ±ä»¯µÄ ServletContextAttributeListener
-	Òª¶ÔServletÉÏÏÂÎÄ ¶ÔÏóµÄÊôĞÔ±ä»¯½øĞĞ¼àÌıÖ»ĞèÊµÏÖServletContextAttributeListener½Ó¿Ú¼´¿É£¬´Ë½Ó¿ÚÖ»ÓĞÈı¸ö·½·¨£¬·Ö±ğÎªÊôĞÔĞÂÔöÊ±µÄ¼àÌı·½·¨£¨attributeAdded£©£¬Í¨¹ıServletContextAttributeEvent ²ÎÊı¿ÉÒÔ¶ÔServletContext¼°ĞÂÔöµÄÊôĞÔÄÚÈİ½øĞĞ²Ù×÷£»ÒÑÓĞÊôĞÔÄÚÈİ±»Ìæ»»Ê±µÄ¼àÌı·½·¨£¨attributeReplaced£©£¬´Ë·½·¨ÔÚÊôĞÔ±»ÖØ¸´¸³Öµ£¨ÄÚÈİÌæ»»£©Ê±µ÷ÓÃ£¬¿ÉÍ¨¹ıServletContextAttributeEvent ²ÎÊı½øĞĞ²Ù×÷£»µ±ServletContextµÄÊôĞÔ±»ÒÆ³ıÊ±µÄ¼àÌı·½·¨£¨attributeRemoved£©£¬Í¨¹ıServletContextAttributeEvent ²ÎÊı»ñÈ¡ServletContextÊôĞÔÄÚÈİÊ±ÒÑÊÇ¿Õ¡£
+	2.ç›‘å¬Servletä¸Šä¸‹æ–‡å¯¹è±¡å±æ€§å˜åŒ–çš„ ServletContextAttributeListener
+	è¦å¯¹Servletä¸Šä¸‹æ–‡ å¯¹è±¡çš„å±æ€§å˜åŒ–è¿›è¡Œç›‘å¬åªéœ€å®ç°ServletContextAttributeListeneræ¥å£å³å¯ï¼Œæ­¤æ¥å£åªæœ‰ä¸‰ä¸ªæ–¹æ³•ï¼Œåˆ†åˆ«ä¸ºå±æ€§æ–°å¢æ—¶çš„ç›‘å¬æ–¹æ³•ï¼ˆattributeAddedï¼‰ï¼Œé€šè¿‡ServletContextAttributeEvent å‚æ•°å¯ä»¥å¯¹ServletContextåŠæ–°å¢çš„å±æ€§å†…å®¹è¿›è¡Œæ“ä½œï¼›å·²æœ‰å±æ€§å†…å®¹è¢«æ›¿æ¢æ—¶çš„ç›‘å¬æ–¹æ³•ï¼ˆattributeReplacedï¼‰ï¼Œæ­¤æ–¹æ³•åœ¨å±æ€§è¢«é‡å¤èµ‹å€¼ï¼ˆå†…å®¹æ›¿æ¢ï¼‰æ—¶è°ƒç”¨ï¼Œå¯é€šè¿‡ServletContextAttributeEvent å‚æ•°è¿›è¡Œæ“ä½œï¼›å½“ServletContextçš„å±æ€§è¢«ç§»é™¤æ—¶çš„ç›‘å¬æ–¹æ³•ï¼ˆattributeRemovedï¼‰ï¼Œé€šè¿‡ServletContextAttributeEvent å‚æ•°è·å–ServletContextå±æ€§å†…å®¹æ—¶å·²æ˜¯ç©ºã€‚
 ```
 @WebListener
 public class MyServletContextAttributeListener implements ServletContextAttributeListener {
@@ -66,7 +66,7 @@ public class MyServletContextAttributeListener implements ServletContextAttribut
     }
 }
 
-JSP´úÂë£º
+JSPä»£ç ï¼š
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
@@ -96,7 +96,7 @@ JSP´úÂë£º
 ![](https://s1.51cto.com/images/blog/201801/09/d28d987a99c3e3870deaab5e59c2463c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 
 
-	3. ¶ÔÓÚHttpSessionµÄ´´½¨£¬Ïú»ÙÒÔ¼°ÊôĞÔµÄ¼àÌıÓëServletContextÀàËÆ£¬·Ö±ğ¶ÔÓ¦HttpSessionListenerºÍHttpSessionAttributeListener£¬ËüÃÇµÄ½Ó¿Ú·½·¨ÓëServletContext½Ó¿Ú·½·¨Ò²ÊÇÀàËÆ£¬´Ë´¦²»ÔÙ×¸Êö£¬ÁíÍâ£¬¶ÔÓÚHttpSessionµÄ²Ù×÷¿ÉÍ¨¹ıHttpSessionEventºÍHttpSessionBindingEvent²ÎÊı½øĞĞ»ñÈ¡£¬Ìù³ö´úÂë¡£
+	3. å¯¹äºHttpSessionçš„åˆ›å»ºï¼Œé”€æ¯ä»¥åŠå±æ€§çš„ç›‘å¬ä¸ServletContextç±»ä¼¼ï¼Œåˆ†åˆ«å¯¹åº”HttpSessionListenerå’ŒHttpSessionAttributeListenerï¼Œå®ƒä»¬çš„æ¥å£æ–¹æ³•ä¸ServletContextæ¥å£æ–¹æ³•ä¹Ÿæ˜¯ç±»ä¼¼ï¼Œæ­¤å¤„ä¸å†èµ˜è¿°ï¼Œå¦å¤–ï¼Œå¯¹äºHttpSessionçš„æ“ä½œå¯é€šè¿‡HttpSessionEventå’ŒHttpSessionBindingEventå‚æ•°è¿›è¡Œè·å–ï¼Œè´´å‡ºä»£ç ã€‚
 ```
 @WebListener
 public class MyHttpSessionListener implements HttpSessionListener {
@@ -129,8 +129,8 @@ public class MyHttpSessionAttributeListener implements HttpSessionAttributeListe
     }
 }
 
-JSP´úÂë£º
-		×¢£ºHttpSessionListenerµÄ¼àÌıÔÚÍ¨¹ıä¯ÀÀÆ÷·ÃÎÊ·şÎñÊ±¼´¿É¶¯×÷£¬ËùÒÔ´Ë´¦Ã»ÓĞ¼Ó²Ù×÷´úÂë¡£
+JSPä»£ç ï¼š
+		æ³¨ï¼šHttpSessionListenerçš„ç›‘å¬åœ¨é€šè¿‡æµè§ˆå™¨è®¿é—®æœåŠ¡æ—¶å³å¯åŠ¨ä½œï¼Œæ‰€ä»¥æ­¤å¤„æ²¡æœ‰åŠ æ“ä½œä»£ç ã€‚
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
@@ -160,7 +160,7 @@ JSP´úÂë£º
 ```
 ![](https://s1.51cto.com/images/blog/201801/09/b0db5bb6e6b91fef26917e1ab4763dd9.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 
-	4. HttpSessionBindingListenerÓÃÓÚ¼àÌıÆäÊµÏÖÀà±¾Éí£¬µ±ÊµÏÖÀà¶ÔÏó±»Ìí¼Óµ½sessionÖĞÊ±£¨session.setAttribute()£©£¬»áµ÷ÓÃvalueBound·½·¨£¬²ÎÊıHttpSessionBindingEventÖĞ°üº¬sessionºÍÊµÌåĞÅÏ¢£¬µ±ÊµÏÖÀà¶ÔÏó±»´ÓsessionÖĞÒÆ³ı£¨session.removeAttribute()£©»òÕßsessionÊ§Ğ§Ê±£¬»áµ÷ÓÃvalueUnbound·½·¨¡£ÁíÍâ£¬´ËlistenerµÄ·½·¨ÔÚHttpSessionAttributeListener·½·¨Ö®Ç°Ö´ĞĞ¡£
+	4. HttpSessionBindingListenerç”¨äºç›‘å¬å…¶å®ç°ç±»æœ¬èº«ï¼Œå½“å®ç°ç±»å¯¹è±¡è¢«æ·»åŠ åˆ°sessionä¸­æ—¶ï¼ˆsession.setAttribute()ï¼‰ï¼Œä¼šè°ƒç”¨valueBoundæ–¹æ³•ï¼Œå‚æ•°HttpSessionBindingEventä¸­åŒ…å«sessionå’Œå®ä½“ä¿¡æ¯ï¼Œå½“å®ç°ç±»å¯¹è±¡è¢«ä»sessionä¸­ç§»é™¤ï¼ˆsession.removeAttribute()ï¼‰æˆ–è€…sessionå¤±æ•ˆæ—¶ï¼Œä¼šè°ƒç”¨valueUnboundæ–¹æ³•ã€‚å¦å¤–ï¼Œæ­¤listenerçš„æ–¹æ³•åœ¨HttpSessionAttributeListeneræ–¹æ³•ä¹‹å‰æ‰§è¡Œã€‚
 ```
 public class MyHttpSessionBindingListener implements HttpSessionBindingListener {
     private String name;
@@ -184,22 +184,22 @@ public class MyHttpSessionBindingListener implements HttpSessionBindingListener 
                 '}';
     }
 
-    //±»ÉèÖÃµ½sessionÖĞ£¨setAttribute£©
+    //è¢«è®¾ç½®åˆ°sessionä¸­ï¼ˆsetAttributeï¼‰
     @Override
     public void valueBound(HttpSessionBindingEvent event) {
         HttpSession session = event.getSession();
-        System.out.println("HttpSessionBindingListener bean±»ÉèÖÃµ½sessionÖĞ£¬sessionId=" + session.getId() + ", bean: " + event.getValue());
+        System.out.println("HttpSessionBindingListener beanè¢«è®¾ç½®åˆ°sessionä¸­ï¼ŒsessionId=" + session.getId() + ", bean: " + event.getValue());
     }
 
-    //´ÓsessionÖĞ½â³ı£¨removeAttribute£©
+    //ä»sessionä¸­è§£é™¤ï¼ˆremoveAttributeï¼‰
     @Override
     public void valueUnbound(HttpSessionBindingEvent event) {
         HttpSession session = event.getSession();
-        System.out.println("HttpSessionBindingListener beanÔÚsessionÖĞ±»ÒÆ³ı£¬sessionId=" + session.getId() + ", bean: " + event.getValue());
+        System.out.println("HttpSessionBindingListener beanåœ¨sessionä¸­è¢«ç§»é™¤ï¼ŒsessionId=" + session.getId() + ", bean: " + event.getValue());
     }
 }
 
-JSP´úÂë£º
+JSPä»£ç ï¼š
 <%@ page import="MyHttpSessionBindingListener" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -237,19 +237,19 @@ JSP´úÂë£º
 
 ![](https://s1.51cto.com/images/blog/201801/09/2a91691b67de32d8b1e74a91151fbebd.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 
-	5. SessionµÄ³Ö¾Ã»¯²Ù×÷£º¶ÔÓÚTomcat·şÎñÆ÷À´Ëµ£¬¿ÉÒÔÍ¨¹ıÅäÖÃcontext.xmlÎÄ¼şÀ´ÆôÓÃ´Ë¹¦ÄÜ£¨TomcatÖĞÄ¬ÈÏÃ»ÓĞÆôÓÃ´Ë¹¦ÄÜ£©£¬ÔÚSession¼´½«³¬Ê±Ê±Éú³ÉsessionId.sessionÎÄ¼ş£¬ÅäÖÃÈçÏÂ£º
-		×¢£ºµ±SessionÔÚÏµÍ³ÖĞ¹ıÆÚÊ±£¬ÔòSessionĞÅÏ¢»á±»Çå³ı£¬Í¬Ê±sessionId.sessionÎÄ¼şÒ²»á±»É¾³ı
+	5. Sessionçš„æŒä¹…åŒ–æ“ä½œï¼šå¯¹äºTomcatæœåŠ¡å™¨æ¥è¯´ï¼Œå¯ä»¥é€šè¿‡é…ç½®context.xmlæ–‡ä»¶æ¥å¯ç”¨æ­¤åŠŸèƒ½ï¼ˆTomcatä¸­é»˜è®¤æ²¡æœ‰å¯ç”¨æ­¤åŠŸèƒ½ï¼‰ï¼Œåœ¨Sessionå³å°†è¶…æ—¶æ—¶ç”ŸæˆsessionId.sessionæ–‡ä»¶ï¼Œé…ç½®å¦‚ä¸‹ï¼š
+		æ³¨ï¼šå½“Sessionåœ¨ç³»ç»Ÿä¸­è¿‡æœŸæ—¶ï¼Œåˆ™Sessionä¿¡æ¯ä¼šè¢«æ¸…é™¤ï¼ŒåŒæ—¶sessionId.sessionæ–‡ä»¶ä¹Ÿä¼šè¢«åˆ é™¤
 ```
 			<Context>
 					<Manager className="org.apache.catalina.session.PersistentManager" maxIdleSwap="1">
 							<Store className="org.apache.catalina.session.FileStore" directory="H:\selfwork\"></Store>
 					</Manager>
 			</Context>
-			* maxIdleSwap£­session´¦ÓÚ²»»î¶¯×´Ì¬³¤Ê±¼ä(s)£¬sesson¶ÔÏó×ªÒÆµ½FileStoreÖĞ£»(£­1±íÊ¾Ã»ÓĞÏŞÖÆ)
-			* directory - ´æ´¢SessionÎÄ¼şµÄÂ·¾¶
-			PersistentManagerÌá¹©ÁË°ÑSession¶ÔÏó±£´æµ½Session storeÖĞµÄ¹ÜÀíÆ÷£¬TomcatÄ¿Ç°Ìá¹©ÁËÁ½ÖÖStoreµÄÊµÏÖ·½Ê½·½Ê½£¬·Ö±ğÎªorg.apache.Catalina.FileStore£¬½«Session¶ÔÏóÒÔ±¾µØÎÄ¼şµÄ·½Ê½´æ´¢ÔÚÖ¸¶¨Ä¿Â¼ÖĞ£»org.apache.Catalina.JDBCStore£¬½«Session¶ÔÏó´æ´¢ÔÚÖ¸¶¨µÄÊı¾İ¿âÖĞ£¬±¾ÎÄÒÔÎÄ¼şµÄĞÎÊ½½øĞĞÑİÊ¾£¬²¢ÇÒ±¾ÎÄ¶ÔÓÚPersistentManager ºÍ Session store µÄÅäÖÃ£¬Ô­ÀíÃ»ÓĞ×öÉîÈë½âÎö£¬Ö»ÊÇ×öSessionµÄ³Ö¾Ã»¯¹¦ÄÜËµÃ÷¡£
+			* maxIdleSwapï¼sessionå¤„äºä¸æ´»åŠ¨çŠ¶æ€é•¿æ—¶é—´(s)ï¼Œsessonå¯¹è±¡è½¬ç§»åˆ°FileStoreä¸­ï¼›(ï¼1è¡¨ç¤ºæ²¡æœ‰é™åˆ¶)
+			* directory - å­˜å‚¨Sessionæ–‡ä»¶çš„è·¯å¾„
+			PersistentManageræä¾›äº†æŠŠSessionå¯¹è±¡ä¿å­˜åˆ°Session storeä¸­çš„ç®¡ç†å™¨ï¼ŒTomcatç›®å‰æä¾›äº†ä¸¤ç§Storeçš„å®ç°æ–¹å¼æ–¹å¼ï¼Œåˆ†åˆ«ä¸ºorg.apache.Catalina.FileStoreï¼Œå°†Sessionå¯¹è±¡ä»¥æœ¬åœ°æ–‡ä»¶çš„æ–¹å¼å­˜å‚¨åœ¨æŒ‡å®šç›®å½•ä¸­ï¼›org.apache.Catalina.JDBCStoreï¼Œå°†Sessionå¯¹è±¡å­˜å‚¨åœ¨æŒ‡å®šçš„æ•°æ®åº“ä¸­ï¼Œæœ¬æ–‡ä»¥æ–‡ä»¶çš„å½¢å¼è¿›è¡Œæ¼”ç¤ºï¼Œå¹¶ä¸”æœ¬æ–‡å¯¹äºPersistentManager å’Œ Session store çš„é…ç½®ï¼ŒåŸç†æ²¡æœ‰åšæ·±å…¥è§£æï¼Œåªæ˜¯åšSessionçš„æŒä¹…åŒ–åŠŸèƒ½è¯´æ˜ã€‚
 ```
-	6. HttpSessionActivationListenerÍ¬ÑùÊÇÓÃÓÚ¼à¿ØÊµÏÖÀà±¾Éí£¬µ±ÊµÏÖÀà¶ÔÏóbean±»Ìí¼Óµ½sessionÖĞ£¨session.setAttribute()£©ºó£¬ÔÚsession±»ĞòÁĞ»¯£¨¶Û»¯£©µ½ÎÄ¼şÊ±£¬sessionWillPassivate·½·¨½«±»µ÷ÓÃ£¨Ö»ÓĞ±£´æµ½SessionÖĞµÄ¶ÔÏó²Å»á±»¼àÌıµ½£©£¬²ÎÊıHttpSessionEventº¬ÓĞSessionµÄÏà¹ØĞÅÏ¢£¬ÓÉÓÚÏÖÀà¶ÔÏóbean»á±»½øĞĞĞòÁĞ»¯²Ù×÷£¬ËùÒÔÊµÏÖÀàÍ¬Ê±ĞèÒªÊµÏÖSerializable½Ó¿Ú¡£
+	6. HttpSessionActivationListeneråŒæ ·æ˜¯ç”¨äºç›‘æ§å®ç°ç±»æœ¬èº«ï¼Œå½“å®ç°ç±»å¯¹è±¡beanè¢«æ·»åŠ åˆ°sessionä¸­ï¼ˆsession.setAttribute()ï¼‰åï¼Œåœ¨sessionè¢«åºåˆ—åŒ–ï¼ˆé’åŒ–ï¼‰åˆ°æ–‡ä»¶æ—¶ï¼ŒsessionWillPassivateæ–¹æ³•å°†è¢«è°ƒç”¨ï¼ˆåªæœ‰ä¿å­˜åˆ°Sessionä¸­çš„å¯¹è±¡æ‰ä¼šè¢«ç›‘å¬åˆ°ï¼‰ï¼Œå‚æ•°HttpSessionEventå«æœ‰Sessionçš„ç›¸å…³ä¿¡æ¯ï¼Œç”±äºç°ç±»å¯¹è±¡beanä¼šè¢«è¿›è¡Œåºåˆ—åŒ–æ“ä½œï¼Œæ‰€ä»¥å®ç°ç±»åŒæ—¶éœ€è¦å®ç°Serializableæ¥å£ã€‚
 ```
 public class MyHttpSessionActivationListener implements HttpSessionActivationListener, Serializable {
     private String name;
@@ -268,12 +268,12 @@ public class MyHttpSessionActivationListener implements HttpSessionActivationLis
 
     public void sessionWillPassivate(HttpSessionEvent httpSessionEvent) {
         HttpSession session = httpSessionEvent.getSession();
-        System.out.println("MyHttpSessionActivationListener sessionWillPassivate(session ¼´½«³¬Ê±£¬bean±»ĞòÁĞ»¯µ½±¾µØ) and sessionId = " + session.getId() + ", " + this.toString());
+        System.out.println("MyHttpSessionActivationListener sessionWillPassivate(session å³å°†è¶…æ—¶ï¼Œbeanè¢«åºåˆ—åŒ–åˆ°æœ¬åœ°) and sessionId = " + session.getId() + ", " + this.toString());
     }
 
     public void sessionDidActivate(HttpSessionEvent httpSessionEvent) {
         HttpSession session = httpSessionEvent.getSession();
-        System.out.println("MyHttpSessionActivationListener sessionDidActivate(session ¼´½«¼¤»î£¬bean±»·´ĞòÁĞ»¯µ½ÄÚ´æ) and sessionId = " + session.getId() + ", " + this.toString());
+        System.out.println("MyHttpSessionActivationListener sessionDidActivate(session å³å°†æ¿€æ´»ï¼Œbeanè¢«ååºåˆ—åŒ–åˆ°å†…å­˜) and sessionId = " + session.getId() + ", " + this.toString());
     }
 
     @Override
@@ -284,7 +284,7 @@ public class MyHttpSessionActivationListener implements HttpSessionActivationLis
     }
 }
 
-JSP´úÂë£º
+JSPä»£ç ï¼š
 <%@ page import="com.MyHttpSessionActivationListener" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -313,13 +313,13 @@ JSP´úÂë£º
 ![](https://s1.51cto.com/images/blog/201801/10/ba732cb9016987cce1f6aaab13d5d523.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 ![](https://s1.51cto.com/images/blog/201801/10/00a2d8b45a8f1c038bb2b8a402ad959b.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 ```
-µ±ÄÚ´æÖĞÃ»ÓĞsessionĞÅÏ¢Ê±£¬Í¨¹ıÖ¸¶¨sessionId·ÃÎÊ·şÎñÆ÷Ê±£¨»òÕßÔÚÔ­ÓĞÒ³ÃæÖĞÖØĞÂË¢ĞÂÊ±£©£¬¸ù¾İsessionId.sessionÎÄ¼ş£¨·´ĞòÁĞ»¯£©»áÖØĞÂÔØÈëĞòÁĞ»¯µÄSessionĞÅÏ¢£¬Í¬Ê±£¬sessionDidActivate·½·¨±»µ÷ÓÃ£¬²ÎÊıHttpSessionEventÖĞº¬Òå·´ĞòÁĞ»¯µÄSession¼°¶ÔÏóbeanĞÅÏ¢
+å½“å†…å­˜ä¸­æ²¡æœ‰sessionä¿¡æ¯æ—¶ï¼Œé€šè¿‡æŒ‡å®šsessionIdè®¿é—®æœåŠ¡å™¨æ—¶ï¼ˆæˆ–è€…åœ¨åŸæœ‰é¡µé¢ä¸­é‡æ–°åˆ·æ–°æ—¶ï¼‰ï¼Œæ ¹æ®sessionId.sessionæ–‡ä»¶ï¼ˆååºåˆ—åŒ–ï¼‰ä¼šé‡æ–°è½½å…¥åºåˆ—åŒ–çš„Sessionä¿¡æ¯ï¼ŒåŒæ—¶ï¼ŒsessionDidActivateæ–¹æ³•è¢«è°ƒç”¨ï¼Œå‚æ•°HttpSessionEventä¸­å«ä¹‰ååºåˆ—åŒ–çš„SessionåŠå¯¹è±¡beanä¿¡æ¯
 ```
 ![](https://s1.51cto.com/images/blog/201801/10/be1c918fb8fbc179849dda175b32704e.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 
-	7. ¼àÌı¿Í»§¶ËÇëÇóServlet Request¶ÔÏóµÄ¼àÌıÆ÷ÓëServletContext¼àÌıÆ÷Í¬ÑùÀàËÆ£¬·Ö±ğ¶ÔÓ¦ServletRequestListener ºÍ ServletRequestAttributeListener£¬ËüÃÇµÄ½Ó¿Ú·½·¨ÓëServletContext½Ó¿Ú·½·¨Ò²ÊÇÀàËÆ£¬´Ë´¦²»ÔÙ×¸Êö£¬ÁíÍâ£¬¶ÔÓÚServletRequestµÄ²Ù×÷¿ÉÍ¨¹ıServletRequestEventºÍServletRequestAttributeEvent²ÎÊı½øĞĞ»ñÈ¡£¬Ìù³ö´úÂë¡£
+	7. ç›‘å¬å®¢æˆ·ç«¯è¯·æ±‚Servlet Requestå¯¹è±¡çš„ç›‘å¬å™¨ä¸ServletContextç›‘å¬å™¨åŒæ ·ç±»ä¼¼ï¼Œåˆ†åˆ«å¯¹åº”ServletRequestListener å’Œ ServletRequestAttributeListenerï¼Œå®ƒä»¬çš„æ¥å£æ–¹æ³•ä¸ServletContextæ¥å£æ–¹æ³•ä¹Ÿæ˜¯ç±»ä¼¼ï¼Œæ­¤å¤„ä¸å†èµ˜è¿°ï¼Œå¦å¤–ï¼Œå¯¹äºServletRequestçš„æ“ä½œå¯é€šè¿‡ServletRequestEventå’ŒServletRequestAttributeEventå‚æ•°è¿›è¡Œè·å–ï¼Œè´´å‡ºä»£ç ã€‚
 ```
- ServletRequestListener ¼àÌıÆ÷
+ ServletRequestListener ç›‘å¬å™¨
 @WebListener
 public class MyServletRequestListener implements ServletRequestListener {
     public void requestDestroyed(ServletRequestEvent servletRequestEvent) {
@@ -337,7 +337,7 @@ public class MyServletRequestListener implements ServletRequestListener {
     }
 }
 
-JSP´úÂë£º
+JSPä»£ç ï¼š
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
@@ -362,7 +362,7 @@ JSP´úÂë£º
 ```
 ![](https://s1.51cto.com/images/blog/201801/10/5641f13bb5fb31f1d2a8e667a21df454.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 ```
-ServletRequestAttributeListener¼àÌıÆ÷
+ServletRequestAttributeListenerç›‘å¬å™¨
 @WebListener
 public class MyServletRequestAttributeListener implements ServletRequestAttributeListener {
     public void attributeAdded(ServletRequestAttributeEvent event) {
@@ -384,7 +384,7 @@ public class MyServletRequestAttributeListener implements ServletRequestAttribut
     }
 }
 
-JSP´úÂë£º
+JSPä»£ç ï¼š
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <body>
@@ -421,5 +421,5 @@ JSP´úÂë£º
 ```
 ![](https://s1.51cto.com/images/blog/201801/10/3ecc6631cfed7924afa129bdf74e766c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 
-## ×Ü½á
-	µÚÒ»´ÎÒÔ²©¿ÍµÄĞÎÊ½¼ÇÂ¼ÁË×Ô¼ºÑ§Ï°web listenerµÄ¾­¹ı£¬ÓëÖ®Ç°µÄÊ¹ÓÃÔÆ±Ê¼ÇÏà±È£¬·¢ÏÖ×Ô¼ºĞèÒªÌáÉıµÄ²»½ö½öÊÇ¶Ô¸÷ÖÖ¼¼ÊõµÄÑ§Ï°ºÍÕÆÎÕ£¬¶ÔÓÚ×Ô¼ºµÄ±í´ïÄÜÁ¦¸üĞèÒª½øĞĞÑµÁ·ºÍÌáÉı£¬ËäÈ»Ö»ÊÇ°ÑlistenerµÄ¸÷¸ödemoÊµÀıÒÔ¼°×Ô¼ºµÄÀí½â¼ÇÂ¼ÏÂÀ´£¬»¹ÊÇ½øĞĞĞŞĞŞ²¹²¹µÄ¸ü¸ÄÁËºÜ¶à´Î¡£ÍòÊÂ×ÜÓĞ¿ªÍ·£¬Ã¿Ò»ÌìµÄµãµÎ½ø²½£¬²ÅÄÜ³É¾Í·Ç·²µÄ×¿Ô½¡£
+## æ€»ç»“
+	ç¬¬ä¸€æ¬¡ä»¥åšå®¢çš„å½¢å¼è®°å½•äº†è‡ªå·±å­¦ä¹ web listenerçš„ç»è¿‡ï¼Œä¸ä¹‹å‰çš„ä½¿ç”¨äº‘ç¬”è®°ç›¸æ¯”ï¼Œå‘ç°è‡ªå·±éœ€è¦æå‡çš„ä¸ä»…ä»…æ˜¯å¯¹å„ç§æŠ€æœ¯çš„å­¦ä¹ å’ŒæŒæ¡ï¼Œå¯¹äºè‡ªå·±çš„è¡¨è¾¾èƒ½åŠ›æ›´éœ€è¦è¿›è¡Œè®­ç»ƒå’Œæå‡ï¼Œè™½ç„¶åªæ˜¯æŠŠlistenerçš„å„ä¸ªdemoå®ä¾‹ä»¥åŠè‡ªå·±çš„ç†è§£è®°å½•ä¸‹æ¥ï¼Œè¿˜æ˜¯è¿›è¡Œä¿®ä¿®è¡¥è¡¥çš„æ›´æ”¹äº†å¾ˆå¤šæ¬¡ã€‚ä¸‡äº‹æ€»æœ‰å¼€å¤´ï¼Œæ¯ä¸€å¤©çš„ç‚¹æ»´è¿›æ­¥ï¼Œæ‰èƒ½æˆå°±éå‡¡çš„å“è¶Šã€‚
